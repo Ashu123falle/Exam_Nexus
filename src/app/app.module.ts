@@ -34,6 +34,7 @@ import { DemoComponent } from './demo/demo.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatCardModule } from '@angular/material/card';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,7 +63,8 @@ import { MatCardModule } from '@angular/material/card';
     AppRoutingModule,
     BsDatepickerModule.forRoot(),
     
-
+    FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,
@@ -74,7 +76,7 @@ import { MatCardModule } from '@angular/material/card';
     MatNativeDateModule,
     MatButtonToggleModule,
     MatCardModule, 
-
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

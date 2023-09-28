@@ -38,12 +38,28 @@ export class ExamBlocksComponent implements OnInit {
     { name: 'Block 18', id: '18' },
     { name: 'Block 19', id: '19' },
     { name: 'Block 20', id: '20' },
-
-
-
-    // Add more blocks with unique IDs as needed
+    { name: 'Block 21', id: '21' },
+    { name: 'Block 22', id: '22' },
+    { name: 'Block 23', id: '23' },
+    { name: 'Block 24', id: '24' },
+    { name: 'Block 25', id: '25' },
+    { name: 'Block 26', id: '26' },
+    { name: 'Block 27', id: '27' },
+    { name: 'Block 28', id: '28' },
+    { name: 'Block 29', id: '29' },
+    { name: 'Block 30', id: '30' },
+    { name: 'Block 31', id: '31' },
+    { name: 'Block 32', id: '32' },
+    { name: 'Block 33', id: '33' },
+    { name: 'Block 34', id: '34' },
+    { name: 'Block 35', id: '35' },
+    { name: 'Block 36', id: '36' },
+    { name: 'Block 37', id: '37' },
+    { name: 'Block 38', id: '38' },
+    { name: 'Block 39', id: '39' },
+    { name: 'Block 40', id: '40' }
   ];
-
+  
   private apiUrl = 'http://localhost:8000/users/blocks';
 
   constructor(

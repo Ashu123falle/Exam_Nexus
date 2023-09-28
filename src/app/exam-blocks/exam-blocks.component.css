@@ -91,3 +91,10 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+.block-link {
+  cursor: pointer;
+}
+::ng-deep .mat-datepicker-content {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
