@@ -1,0 +1,46 @@
+<div *ngIf="show" class="student-data-container fade-in">
+  <h2>Student Data for Block {{ selectedBlockNumber }}</h2>
+  <table #dataTable>
+    <thead>
+      <tr>
+        <th>PRN</th>
+        <th>Student Name</th>
+        <th>Programe</th>
+        <th>Class</th>
+        <th>Course</th>
+        <th>Block No</th>
+        <th>Date</th>
+        <th>Attendance</th>
+        <th>MalPractice</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of studentData; let i = index; trackBy: trackByFn" [@fadeIn]="i">
+        <td>{{ student.prn }}</td>
+        <td>{{ student.studentname }}</td>
+        <td>{{student.programname}}</td>
+        <td>{{student.year}}</td>
+        <td>{{student.course}}</td>
+        <td>{{ student.block_no}}</td>
+        <td>{{student.date}}</td>
+        <td>
+          <label class="switch">
+            <input type="checkbox" [(ngModel)]="student.attendance" name="attendance">
+            <span class="slider"></span>
+          </label>
+        </td>
+        <td>
+          <label class="switch">
+            <input type="checkbox" [(ngModel)]="student.malpractice" name="malpractice">
+            <span class="slider"></span>
+          </label>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button (click)="openConfirmationDialog()"  class="custom-button">
+    <span class="icon">📋</span> Generate Absent Report
+  </button>
+
+  
+</div>

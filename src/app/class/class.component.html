@@ -1,0 +1,12 @@
+<!-- class.component.html -->
+
+<div class="block-list-container">
+  <h2 class="exam-heading text-center">Choose a Class</h2>
+  <ul class="list-group">
+    <li *ngFor="let class of classes" class="list-group-item animated fadeIn" (click)="onClassClick(class.id)">
+      <div class="block">
+        {{ class.name }}
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,46 @@
+<div class="report-container">
+  <header>
+    <div class="college-info">
+      <img src="assets/logo.webp" alt="College Logo" class="college-logo">
+      <div class="college-text">
+        <h1>Sharad Institute of Technology College of Engineering, Yadrav</h1>
+        <h2 class="an-autonomous">An Autonomous Institute</h2>
+      </div>
+    </div>
+  </header>
+  <h3 class="absent-student-record">{{reportType}} Student Record</h3>
+  <div class="additional-info">
+    <p>Examination: {{ examination }}</p>
+    <p>Class: {{ class }}</p>
+    <p>Examination Date :{{intialdate}} to {{enddate}}</p>
+  </div>
+  <table class="absent-students-table">
+    <thead>
+      <tr>
+        <th>Program</th>
+        <th>Course Code</th>
+        <th>Course Name</th>
+        <th>PRN</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of reportData">
+        <td>{{ student.programname }}</td>
+        <td>{{ student.coursecode }}</td>
+        <td>{{student.course}}</td>
+        <td>{{student.prn}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <footer>
+    <p>Verified By</p>
+    <p><br></p>
+    <p>(Name&Sign)</p>
+  </footer>
+  <button class="print-button" (click)="printReport()">Print</button>
+</div>
+
+
+
+
+

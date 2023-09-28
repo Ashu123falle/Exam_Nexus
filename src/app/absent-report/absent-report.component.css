@@ -1,0 +1,110 @@
+/* Styling for Absent Report component */
+/* Animation for fading in */
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+.absent-report-container {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .report-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .report-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-header {
+    background-color: #555;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .table-row:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  .table-row {
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 18px; /* Increased font size for list data */
+  }
+  
+  .table-row:hover {
+    background-color: #ddd;
+  }
+  
+  .report-buttons {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Style the "Save" button */
+  .btn-save {
+    background-color: #27ae60;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 12px 24px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+  }
+  
+  /* Style the "Print" button */
+  .btn-print {
+    background-color: #e74c3c;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+  }
+  
+  /* Hover effect for buttons */
+  .btn-save:hover,
+  .btn-print:hover {
+    background-color: #219653;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Add a CSS class to hide the buttons when printing */
+@media print {
+  .btn-save,
+  .btn-print {
+    display: none;
+  }
+}

@@ -1,0 +1,100 @@
+/* validation-report.component.css */
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  mat-form-field {
+    width: 100%;
+  }
+  
+  .generate-btn {
+    width: 100%;
+  }
+  
+  .loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .loading-overlay mat-spinner {
+    margin-top: 20px;
+  }
+/* Define styles for the page heading, icon, and animated icon */
+.page-heading-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.edit-icon {
+  font-size: 1.5em;
+  color:purple; /* Customize the color */
+  margin-right: 10px;
+}
+
+.page-heading {
+  font-size: 2em;
+  display: inline-block;
+  color: #333; /* Customize the color */
+  vertical-align: middle;
+}
+
+.animated-icon {
+  display: inline-block;
+  font-size: 2em;
+  color: #0dc496; /* Customize the color */
+  vertical-align: middle;
+}
+/* ... (previous code) ... */
+
+.toggle-group {
+  display: flex; /* Make the buttons align horizontally */
+  border: 1px solid #ccc; /* Add a border for separation */
+  border-radius: 8px; /* Add rounded corners */
+  overflow: hidden;
+  margin-top: 10px; /* Add space between toggle group and content */
+}
+
+.mat-button-toggle {
+  flex: 1; /* Make the buttons equally distribute space */
+  border: none; /* Remove button border */
+  padding: 10px 20px; /* Adjust padding for button */
+  background-color: #f0f0f0; /* Set button background color */
+  color: #333; /* Set button text color */
+  transition: background-color 0.3s; /* Add a transition for smooth effect */
+}
+
+.mat-button-toggle-checked {
+  background-color: #007bff; /* Change this to your desired background color */
+  color: #fff; /* Change this to your desired text color */
+}
+
+.report-content {
+  /* Add styles for the report content here */
+  border-radius: 8px; /* Add rounded corners to report content */
+  background-color: #fff; /* Add a background color for report content */
+  padding: 20px; /* Add padding for content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* ... (remaining code) ... */
+
+  

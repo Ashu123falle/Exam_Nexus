@@ -1,0 +1,92 @@
+/* Remove previous styles and add the following */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f6f6f6;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.filter-container mat-form-field {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading-animation {
+  font-size: 24px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.table-container {
+  max-height: 500px;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mat-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mat-table th, .mat-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.mat-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-row {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.table-row:hover {
+  background-color: #ebebeb;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.clear-filters-btn {
+  /* margin-top: 20px; */
+  margin-top: auto;
+  align-self: center;
+}
+/* Updated CSS */
+.heading {
+  text-align: center;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.heading h1 {
+  display: inline-block;
+  font-size: 24px; /* Adjust as needed */
+  margin: 0;
+}
+
+.heading i {
+  margin-right: 10px;
+}

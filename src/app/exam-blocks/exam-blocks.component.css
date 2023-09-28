@@ -1,0 +1,93 @@
+/* Updated styles for the block-list-container section */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.block-list-container {
+  background: linear-gradient(180deg, #f6f6f6, #e0e0e0);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Styling for the Exam Blocks heading */
+.exam-heading {
+  color: #000;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Style date picker */
+.date-picker {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Style card container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Style individual cards */
+.card {
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add hover effect to cards */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Block link styles */
+.block-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Block styles */
+.block {
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Animated fadeIn effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.loader {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid #000;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

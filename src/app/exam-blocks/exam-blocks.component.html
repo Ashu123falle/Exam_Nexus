@@ -1,0 +1,25 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+<div class="block-list-container">
+  <h2 class="exam-heading text-center">Exam Blocks</h2>
+  <mat-form-field appearance="fill">
+    <mat-label>Choose Date</mat-label>
+    <input matInput type="date" [(ngModel)]="selectedDate" class="form-control">
+  </mat-form-field>
+
+  <div class="card-container">
+    <ng-container *ngFor="let block of examBlocks; trackBy: trackById">
+      <div class="card animated fadeIn">
+        <a (click)="onBlockClick(block)" class="block-link">
+          <div class="block">
+            {{ block.name }}
+          </div>
+        </a>
+      </div>
+    </ng-container>
+  </div>
+
+  <div class="loader-container" *ngIf="isLoading">
+    <div class="loader"></div>
+  </div>
+</div>

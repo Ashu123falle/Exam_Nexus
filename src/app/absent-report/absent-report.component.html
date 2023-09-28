@@ -1,0 +1,31 @@
+<div *ngIf="absentStudents" class="absent-report-container fade-in">
+  <h2 class="report-heading">Absent Students Report</h2>
+  <table class="report-table">
+    <thead>
+      <tr>
+        <!-- <th class="table-header">PRN</th>
+        <th class="table-header">Student Name</th> -->
+        <th class="table-header">PRN</th>
+        <th class="table-header">Student Name</th>
+        <th class="table-header">Class</th>
+        <th class="table-header">Subject</th>
+        <th class="table-header">Block No</th>
+        <th class="table-header">Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of absentStudents" class="table-row">
+        <td>{{ student.prn }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{student.year}}</td>
+        <td>{{student.subject}}</td>
+        <td>{{student.block}}</td>
+        <td>{{student.exam_date}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="report-buttons">
+    <button class="btn-save" (click)="saveReport()">Save</button>
+    <button class="btn-print" (click)="printReport()">Print</button>
+  </div>
+</div>
