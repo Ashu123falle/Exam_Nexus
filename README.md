@@ -3,7 +3,7 @@ Examnexus is a robust and intuitive Exam Management System designed to streamlin
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
 
-## Exam_Nexus-Backend
+## Backend
 link- https://github.com/Ashu123falle/Exam_Nexus-Backend
 
 ## Development server
